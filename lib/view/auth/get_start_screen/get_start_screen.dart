@@ -16,7 +16,7 @@ class _GetStartScreenState extends State<GetStartScreen> {
             width: double.infinity,
             height: double.infinity,
             decoration: BoxDecoration(
-              image: DecorationImage(image: NetworkImage(""),fit: BoxFit.cover),
+              image: DecorationImage(image: NetworkImage("https://i.pinimg.com/736x/b8/8e/ff/b88eff66543056c6ae38d9129446d18a.jpg"),fit: BoxFit.cover),
             ),
           ),
           Positioned(

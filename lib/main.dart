@@ -1,9 +1,9 @@
 import 'package:firebase_auth_ecm/view/auth/get_start_screen/get_start_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-void main() {
+void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
