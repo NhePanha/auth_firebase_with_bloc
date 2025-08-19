@@ -5,6 +5,12 @@ void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
+  // MultiProvider(
+  //     providers: [
+  //       ChangeNotifierProvider(create: (_) => Counter()),
+  //     ],
+  //     child: const MyApp(),
+  //   );
 }
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

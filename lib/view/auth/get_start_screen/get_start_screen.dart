@@ -6,6 +6,7 @@ class GetStartScreen extends StatefulWidget {
   @override
   State<GetStartScreen> createState() => _GetStartScreenState();
 }
+
 class _GetStartScreenState extends State<GetStartScreen> {
   @override
   Widget build(BuildContext context) {

@@ -4,6 +4,7 @@ import 'package:elegant_notification/resources/stacked_options.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_auth_ecm/utils/auth_widget/widget_register.dart';
 import 'package:firebase_auth_ecm/utils/widget_buttom.dart';
+import 'package:firebase_auth_ecm/view/home/home_screen.dart';
 import 'package:flutter/material.dart';
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -50,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
         email: emailcontroller.text.trim(),
         password: passwordcontroller.text.trim(),
       );
-      log("Login successful");
+      Navigator.push(context, MaterialPageRoute(builder: (context)=> HomeScreen()));
 
     } on FirebaseAuthException catch (e) {
       log("Login failed: ${e.code} - ${e.message}");
